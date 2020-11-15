@@ -1,3 +1,8 @@
+/*COLOR DEL FONDO DE LA PÁGINA*/
+body {
+  background-color: #fffbf7;
+}
+
 h1 { color:#036746; }
 h4 { color:#1E7CE6; }
 button {color:#000204; }
@@ -205,4 +210,67 @@ li {
   .features .feature-card .feature-image img {
     margin-top: 0;
     height: 100%;
+  }
+
+  /* RESPONSIVE DESIGN */
+  @media (max-width: 575px) 
+
+  /*CAMBIAR DE COLOR CUANDO LA PANTALLA ES MÁS PEQUEÑA*/
+  {
+      body{
+          background-color: burlywood;
+      }
+    .navbar,
+    .actions, 
+    .menu-item
+    {
+      display: none;
+    }
+  
+    main {
+      margin-top: 130px;
+    }
+
+    .banner > img {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+
+    /*AJUSTAR EL VIDEO A NUESTRA PANTALLA*/
+
+    .explanatory-video > video {
+        width: 100%
+    }
+
+
+    .publish > form {
+      flex-direction: column;
+    }
+    
+    /*HACER LOS BOTONES DE LAPUBLICIDAD RESPOSIVOS*/
+    .publish > form > div {
+      height: 50px;
+      margin-top: 10px;
+    }
+  
+    .publish > form > div > input {
+      width: 50%;
+    }
+
+    .features {
+        margin-top: 10px;
+        grid-template: repeat(4, 500px) / 1fr; 
+    }
+     .features > .feature-card {
+         display: flex;
+         flex-direction: colum;
+         align-items: center;
+     }
+
+     .feature-image > figure > image {
+         width: 100%
+     }
   }
