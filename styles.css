@@ -241,23 +241,35 @@ li {
 
     /*AJUSTAR EL VIDEO A NUESTRA PANTALLA*/
 
-    .explanatory-video > video {
-        width: 100%
+    .promo {
+      flex-direction: column;
     }
 
+    .explanatory-video > video {
+        width: 110%
+    }
+    
+    .publish {
+      margin-top: 20px;
+    }
+
+    .publish > h3 {
+      font-size: 25px;
+      line-height: 1.2;
+    }
 
     .publish > form {
       flex-direction: column;
     }
     
-    /*HACER LOS BOTONES DE LAPUBLICIDAD RESPOSIVOS*/
+    /*HACER LOS BOTONES DE LA PUBLICIDAD RESPONSIVOS*/
     .publish > form > div {
       height: 50px;
       margin-top: 10px;
     }
   
     .publish > form > div > input {
-      width: 50%;
+      width: 60%;
     }
 
     .features {
